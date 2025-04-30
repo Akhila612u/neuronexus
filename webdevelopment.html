@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Quiz Maker</title>
+  <link rel="stylesheet" href="webdevelopment.css">
+</head>
+<body>
+  <h1>Online Quiz Maker</h1>
+
+  <div class="creator">
+    <h2>Create Quiz</h2>
+    <input type="text" id="question" placeholder="Enter question">
+    <input type="text" id="option1" placeholder="Option 1">
+    <input type="text" id="option2" placeholder="Option 2">
+    <input type="text" id="option3" placeholder="Option 3">
+    <input type="text" id="option4" placeholder="Option 4">
+    <input type="number" id="correct" placeholder="Correct Option (1-4)">
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+
+  <hr>
+
+  <div class="quiz">
+    <h2>Take Quiz</h2>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="quizArea"></div>
+    <button onclick="submitQuiz()">Submit Quiz</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="webdevelopment.js"></script>
+</body>
+</html>
